@@ -1,0 +1,22 @@
+{
+  "addresses": [
+    {
+      "title": "UAE",
+      "body": "Sharjah Publishing City Free Zone, P.O Box 73111, UAE",
+      "location": "https://www.google.com/maps/place/SPC+Free+Zone/@25.3199661,55.4580556,15z/data=!4m5!3m4!1s0x0:0xc0f6d4eb509bdf75!8m2!3d25.3199661!4d55.4580556"
+    },
+    {
+      "title": "INDIA",
+      "body": "Ds Max Sterling, Bangalore 87,Karnataka, INDIA.",
+      "location": "https://www.google.com/maps/place/DS+max+Sterling/@12.9415792,77.750609,15z/data=!4m5!3m4!1s0x0:0xc4c36b864d7f7aa!8m2!3d12.9415792!4d77.750609"
+    }
+  ],
+  "client": {
+    "description": "Lorem Ipsum dolar sit amat der satone recoredsaw yetorsrtatew dresgrete utireds",
+    "clients": [
+      { "url": "", "image": "cakap" },
+      { "url": "", "image": "juneit" },
+      { "url": "", "image": "ailoitte" }
+    ]
+  }
+}

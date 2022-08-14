@@ -2,11 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import ServiceBox from "../../components/ServiceBox";
 import ServiceViewAllBtn from "../../components/ServiceViewAllBtn";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const ServiceSection = (props) => {
+  const { width } = useWindowDimensions();
   return (
     <div className="section-2">
-      <div className="container">
+      <div className={width > 768 ? "container" : "container px-5"}>
         <div className="text-1">Our Services</div>
         <div className="row align-items-stretch">
           <ServiceBox

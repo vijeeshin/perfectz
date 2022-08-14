@@ -1,15 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const AddressSection = (props) => {
   const { addresses, emailUrl, linkedInUrl } = props;
+  const { width } = useWindowDimensions();
   return (
     <div className="section-10">
       <div className="container">
         <div className="logo">
           <img src="assets/images/logo.png" />
         </div>
-        <div className="row justify-content-around">
+        <div
+          className={width > 768 ? "row justify-content-around" : "row px-5"}
+        >
           {addresses
             ? addresses.map((address, index) => (
                 <div className="col-auto" key={`${index}`}>
@@ -27,14 +31,20 @@ const AddressSection = (props) => {
               ))
             : null}
         </div>
-        <div className="links">
-          <div className="link">
+        <div className={width > 768 ? "links" : "links px-5"}>
+          <div
+            className="link"
+            style={{ textAlign: width > 768 ? "center" : "left" }}
+          >
             <label>Email:</label>
             <a href={`mailto:${emailUrl}`} target="_blank">
               {emailUrl}
             </a>
           </div>
-          <div className="link">
+          <div
+            className="link"
+            style={{ textAlign: width > 768 ? "center" : "left" }}
+          >
             <label>Follow us:</label>
             <a href={linkedInUrl} target="_blank">
               <img src="assets/images/linkedin.png" />

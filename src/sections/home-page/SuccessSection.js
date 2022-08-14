@@ -1,10 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const SuccessSection = (props) => {
+  const { width } = useWindowDimensions();
+
   return (
     <div className="section-1">
-      <div className="container">
+      <div className={width > 768 ? "container" : "container px-5"}>
         <div className="d-block d-sm-none">
           <div className="row">
             <div className="col">

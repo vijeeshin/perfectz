@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ClientBox from "../../components/ClientBox";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const ClientSection = (props) => {
   const { clients, desc } = props;
+  const { width } = useWindowDimensions();
   return (
     <div className="section-8">
-      <div className="container">
+      <div className={width > 768 ? "container" : "container px-5"}>
         <div className="text-1">Our Clients</div>
         <div className="text-2">{desc}</div>
         <div className="row justify-content-between">

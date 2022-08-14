@@ -15,14 +15,17 @@ import { Config } from "../config/Config";
 import AddressSection from "../sections/home-page/AddressSection";
 import ContactUsForm from "../forms/ContactUsForm";
 import ContactUsSection from "../sections/home-page/ContactUsSection";
+import BrandingSection from "../sections/home-page/BrandingSection";
+import useWindowDimensions from "../utils/useWindowDimensions";
 
 const HomePage = (props) => {
+  const { width } = useWindowDimensions();
   return (
     <>
       <HeaderLayout />
 
       <div className="hero header-size-pad">
-        <div className="container">
+        <div className={width > 768 ? "container" : "container px-5"}>
           <TwoSwiper />
         </div>
       </div>
@@ -41,6 +44,7 @@ const HomePage = (props) => {
       <TechnologyStackSection />
 
       <TalentSection url={"/contact"} />
+      <BrandingSection />
       <ClientSection
         clients={Config.data.client.clients}
         desc={Config.data.client.description}

@@ -14,7 +14,7 @@ const HelloSection = (props) => {
   } = props;
   return (
     <div className="section-3">
-      <div className="container">
+      <div className={width > 768 ? "container" : "container px-5"}>
         <div className="hello">
           <div className="hello-image"></div>
           <div className="hello-text">

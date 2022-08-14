@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const BrandingSection = (props) => {
   const { url } = props;
+  const { width } = useWindowDimensions();
   return (
     <div className="section-7">
-      <div className="container">
+      <div className={width > 768 ? "container" : "container px-5"}>
         <div className="designer-image">
           <img src="assets/images/designhead.png" />
         </div>

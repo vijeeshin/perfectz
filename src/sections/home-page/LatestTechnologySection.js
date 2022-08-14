@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TechItem from "../../components/TechItem";
+import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const LatestTechnologySection = (props) => {
   const { viewAllUrl } = props;
+  const { width } = useWindowDimensions();
   return (
     <div className="section-4">
-      <div className="container">
+      <div className={width > 768 ? "container" : "container px-5"}>
         <div className="row">
           <div className="col col-12 col-sm-6">
             <div className="text-1">

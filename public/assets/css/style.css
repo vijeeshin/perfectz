@@ -138,12 +138,14 @@
       line-height: 1.32em;
       color: #8F9092; }
     .hero .slider .image-1 {
+      display: block;
       width: 100%;
-      height: auto; }
+      height: 100% }
       .hero .slider .image-1 img {
         display: block;
+        resize: horizontal;
         width: 100%;
-        height: auto; }
+        height: auto }
   .hero .slider-1 {
     margin-top: 2rem; }
     .hero .slider-1 .text-3 {

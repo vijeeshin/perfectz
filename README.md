@@ -1,70 +1,180 @@
-# Getting Started with Create React App
+  <div className="col col-12 col-sm-5">
+                  <div>
+                    <Swiper>
+                      <SwiperSlide>
+                        <div className="text-1">
+                          DESIGN AND BUILD YOUR TECH TEAM
+                        </div>
+                        <div className="text-2">
+                          We create value for our clients by creating value for
+                          their customers.
+                        </div>
+                        <div className="action">
+                          <a
+                            href="http://localhost/perfectz/#our-services"
+                            className="btn btn-primary"
+                          >
+                            <span>OUR SERVICES</span>
+                            <img src="./assets/images/arrow-forward-ios.png" />
+                          </a>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="text-1">WE HELP TRANSFORM</div>
+                        <div className="text-2">
+                          Technology stack transformation
+                        </div>
+                        <div className="action">
+                          <a
+                            href="http://localhost/perfectz/#our-services"
+                            className="btn btn-primary"
+                          >
+                            <span>OUR SERVICES</span>
+                            <img src="./assets/images/arrow-forward-ios.png" />
+                          </a>
+                        </div>
+                      </SwiperSlide>
+                      <SwiperSlide>
+                        <div className="text-1">IT TALENTS ON-DEMAND</div>
+                        <div className="text-2">
+                          We know that you can't build a company with innovation
+                          alone, you also need IT talent to deliver products.
+                        </div>
+                        <div className="action">
+                          <a
+                            href="http://localhost/perfectz/#our-services"
+                            className="btn btn-primary"
+                          >
+                            <span>OUR SERVICES</span>
+                            <img src="./assets/images/arrow-forward-ios.png" />
+                          </a>
+                        </div>
+                      </SwiperSlide>
+                    </Swiper>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+                    <div className="image-1 d-sm-none">
+                      <Swiper
+                        effect={"flip"}
+                        grabCursor={true}
+                        modules={[EffectFlip]}
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        speed={100}
+                        loop={true}
+                        autoplay={true}
+                        touchRatio={1.5}
+                        navigation={false}
+                        pagination={{ clickable: true }}
+                      >
+                        <SwiperSlide>
+                          <div
+                            className="image-1"
+                            style={{
+                              backgroundPosition: " 50%",
+                              height: " 500px",
+                              width: "100%",
+                              boxSizing: "border-box",
+                              backgroundImage: `url(
+                            ./assets/images/hero-object.png
+                          )`,
+                              backgroundRepeat: "no-repeat",
+                              backgroundSize: "contain",
+                            }}
+                          ></div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div
+                            className="image-1"
+                            style={{
+                              backgroundPosition: " 50%",
+                              height: " 500px",
+                              width: "100%",
+                              boxSizing: "border-box",
+                              backgroundImage: `url(
+                            ./assets/images/hero-object2.png
+                          )`,
+                              backgroundRepeat: "no-repeat",
+                              backgroundSize: "contain",
+                            }}
+                          ></div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                          <div
+                            className="image-1"
+                            style={{
+                              backgroundPosition: " 50%",
+                              height: " 500px",
+                              width: "100%",
+                              boxSizing: "border-box",
+                              backgroundImage: `url(
+                            ./assets/images/hero-object3.png
+                          )`,
+                              backgroundRepeat: "no-repeat",
+                              backgroundSize: "contain",
+                            }}
+                          ></div>
+                        </SwiperSlide>
+                      </Swiper>
+                    </div>
+                  </div>
+                </div>
+                <div className="col col-12 col-sm-7 d-none d-sm-block">
+                  <Swiper
+                    effect={"flip"}
+                    grabCursor={true}
+                    pagination={false}
+                    navigation={false}
+                    loop={true}
+                    autoplay={500}
+                    modules={[EffectFlip]}
+                  >
+                    <SwiperSlide>
+                      <div
+                        className="image-1"
+                        style={{
+                          backgroundPosition: " 50%",
+                          height: " 500px",
+                          width: "100%",
+                          boxSizing: "border-box",
+                          backgroundImage: `url(
+                            ./assets/images/hero-object.png
+                          )`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "contain",
+                        }}
+                      ></div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div
+                        className="image-1"
+                        style={{
+                          backgroundPosition: " 50%",
+                          height: " 500px",
+                          width: "100%",
+                          boxSizing: "border-box",
+                          backgroundImage: `url(
+                            ./assets/images/hero-object2.png
+                          )`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "contain",
+                        }}
+                      ></div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div
+                        className="image-1"
+                        style={{
+                          backgroundPosition: " 50%",
+                          height: " 500px",
+                          width: "100%",
+                          boxSizing: "border-box",
+                          backgroundImage: `url(
+                            ./assets/images/hero-object3.png
+                          )`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "contain",
+                        }}
+                      ></div>
+                    </SwiperSlide>
+                  </Swiper>
+                </div>

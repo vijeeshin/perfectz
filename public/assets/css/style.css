@@ -101,90 +101,135 @@
   height: auto;
   padding: 1.25rem 1.25rem 6.25rem 1.25rem;
   color: #fff;
-  background-color: #191A1C; }
-  .hero:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(../images/hero-bg.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    opacity: 0.2;
-    z-index: 0; }
-  .hero > .container {
-    position: relative;
-    z-index: 1; }
-  .hero .slider {
-    margin-top: 5rem; }
-    .hero .slider-content {
-      width: auto; }
-    .hero .slider-slide {
-      width: auto; }
-      .hero .slider-slide-content {
-        width: auto; }
-    .hero .slider .text-1 {
-      margin-bottom: 3rem;
-      font-weight: 700;
-      font-size: 3.75rem;
-      line-height: 1.1em;
-      color: #fff; }
-    .hero .slider .text-2 {
-      margin-bottom: 3rem;
-      font-size: 1.75rem;
-      line-height: 1.32em;
-      color: #8F9092; }
-    .hero .slider .image-1 {
-      display: block;
-      width: 100%;
-      height: 100% }
-      .hero .slider .image-1 img {
-        display: block;
-        resize: horizontal;
-        width: 100%;
-        height: auto }
-  .hero .slider-1 {
-    margin-top: 2rem; }
-    .hero .slider-1 .text-3 {
-      margin-top: 8rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.32em;
-      font-size: 1.75rem;
-      color: #E1A83F; }
-    .hero .slider-1 .image-2 {
-      width: 80%;
-      height: auto;
-      margin-left: 20%; }
-      .hero .slider-1 .image-2 img {
-        display: block;
-        width: 100%;
-        height: auto; }
-    .hero .slider-1 .higlights {
-      margin-top: 8rem; }
-      .hero .slider-1 .higlights ul {
-        display: block;
-        padding: 0;
-        margin: 0;
-        list-style: none; }
-        .hero .slider-1 .higlights ul li {
-          display: block;
-          padding: 0;
-          margin: 0.5rem 0;
-          list-style: none;
-          line-height: 1.5em; }
-          .hero .slider-1 .higlights ul li:before {
-            content: '';
-            display: inline-block;
-            width: 1.5em;
-            height: 0.75em;
-            vertical-align: middle;
-            background-image: url(../images/label.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: left center; }
+  background-color: #191A1C;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../images/hero-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.hero>.container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .slider {
+  margin-top: 5rem;
+}
+ .hero .slider .action {
+  text-align: left;
+}
+ .hero .slider .action img{
+      display: inline-block;
+        width: auto;
+        height: 1rem;
+        vertical-align: middle;
+ }
+.hero .slider-content {
+  width: auto;
+}
+
+.hero .slider-slide {
+  width: auto;
+}
+
+.hero .slider-slide-content {
+  width: auto;
+}
+
+.hero .slider .text-1 {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 1.1em;
+  color: #fff;
+  text-align: left;
+}
+
+.hero .slider .text-2 {
+  margin-bottom: 3rem;
+  font-size: 1.75rem;
+  line-height: 1.32em;
+  color: #8F9092;
+  text-align: left;
+}
+
+.hero .slider .image-1 {
+  width: 100%;
+  height: auto;
+}
+
+.hero .slider .image-1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero .slider-1 {
+  margin-top: 2rem;
+}
+
+.hero .slider-1 .text-3 {
+  margin-top: 8rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.32em;
+  font-size: 1.75rem;
+  color: #E1A83F;
+}
+
+.hero .slider-1 .image-2 {
+  width: 80%;
+  height: auto;
+  margin-left: 20%;
+}
+
+.hero .slider-1 .image-2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero .slider-1 .higlights {
+  margin-top: 8rem;
+}
+
+.hero .slider-1 .higlights ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero .slider-1 .higlights ul li {
+  display: block;
+  padding: 0;
+  margin: 0.5rem 0;
+  list-style: none;
+  line-height: 1.5em;
+}
+
+.hero .slider-1 .higlights ul li:before {
+  content: '';
+  display: inline-block;
+  width: 1.5em;
+  height: 0.75em;
+  vertical-align: middle;
+  background-image: url(../images/label.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
 
 .section-1 {
   padding: 0;

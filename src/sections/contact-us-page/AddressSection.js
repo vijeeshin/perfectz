@@ -17,16 +17,16 @@ const AddressSection = (props) => {
           {addresses
             ? addresses.map((address, index) => (
                 <div className="col-auto" key={`${index}`}>
-                  <a
+                  {/*  <a
                     className="address"
                     href={address.location}
                     target="_blank"
-                  >
-                    <div className="address-header">{address.title}</div>
-                    <div className="address-body">
+                  > */}
+                  <div className="address-header">{address.title}</div>
+                  {/*  <div className="address-body">
                       {address.body.replace(/(?:\r\n|\r|\n)/g, "<br />")}
                     </div>
-                  </a>
+                  </a> */}
                 </div>
               ))
             : null}

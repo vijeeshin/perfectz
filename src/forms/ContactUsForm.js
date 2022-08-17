@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import emailjs from "@emailjs/browser";
 import {
   LoadCanvasTemplate,
   loadCaptcha,
@@ -40,11 +41,29 @@ const ContactUsForm = (props) => {
   } = useForm({ resolver: yupResolver(schema) });
   const onSubmit = (data) => {
     if (validateCaptcha(data.captcha) == true) {
-      alert("Captcha Matched");
+      emailjs
+        .send(
+          "service_v4ls8np",
+          "template_wdcsx3k",
+          {
+            from_name: data.fullname,
+            email: data.email,
+            phone: data.phone,
+            message: data.message,
+          },
+          "UMXQFQwixnYKhCd0f"
+        )
+        .then(
+          (result) => {
+            reset();
+            loadCaptcha(6);
+          },
+          (error) => {
+            reset();
+            loadCaptcha(6);
+          }
+        );
     }
-
-    reset();
-    loadCaptcha(6);
   };
 
   return (

@@ -9,6 +9,7 @@ import {
   loadCaptcha,
   validateCaptcha,
 } from "./ReactCaptcha";
+import { ToastContainer } from "react-toastify";
 
 const ContactUsForm = (props) => {
   useEffect(() => {
@@ -55,10 +56,12 @@ const ContactUsForm = (props) => {
         )
         .then(
           (result) => {
+            toast("Form got submitted successfully");
             reset();
             loadCaptcha(6);
           },
           (error) => {
+            toast("Something went wrong");
             reset();
             loadCaptcha(6);
           }
@@ -153,6 +156,7 @@ const ContactUsForm = (props) => {
           />
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 };

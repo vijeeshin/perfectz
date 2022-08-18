@@ -10,6 +10,7 @@ import {
   validateCaptcha,
 } from "./ReactCaptcha";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUsForm = (props) => {
   useEffect(() => {

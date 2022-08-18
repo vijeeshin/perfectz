@@ -42,7 +42,7 @@ const TwoSwiper = (props) => {
                       their customers.
                     </div>
                     <div className="action">
-                      <a href="#our-services" className="btn btn-primary">
+                      <a href="/contact" className="btn btn-primary">
                         <span>OUR SERVICES</span>
                         <img src="assets/images/arrow-forward-ios.png" />
                       </a>
@@ -90,7 +90,7 @@ const TwoSwiper = (props) => {
                       Technology stack transformation
                     </div>
                     <div className="action">
-                      <a href="#our-services" className="btn btn-primary">
+                      <a href="/contact" className="btn btn-primary">
                         <span>OUR SERVICES</span>
                         <img src="assets/images/arrow-forward-ios.png" />
                       </a>
@@ -139,7 +139,7 @@ const TwoSwiper = (props) => {
                       alone, you also need IT talent to deliver products.
                     </div>
                     <div className="action">
-                      <a href="#our-services" className="btn btn-primary">
+                      <a href="/contact" className="btn btn-primary">
                         <span>OUR SERVICES</span>
                         <img src="assets/images/arrow-forward-ios.png" />
                       </a>

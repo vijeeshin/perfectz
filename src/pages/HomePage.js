@@ -44,7 +44,7 @@ const HomePage = (props) => {
       <TechnologyStackSection />
 
       <TalentSection url={"/contact"} />
-      <BrandingSection />
+      <BrandingSection url={"/contact"} />
       <ClientSection
         clients={Config.data.client.clients}
         desc={Config.data.client.description}

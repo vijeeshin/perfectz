@@ -15,45 +15,45 @@ const ServiceSection = (props) => {
             title={"TECH TRANSFORMATION"}
             alt={"TECH TRANSFORMATION"}
             image={"assets/images/services/w/attractions.png"}
-            url={"#"}
+            url={"/contact"}
           />
           <ServiceBox
             title={"TEAM BUILDING"}
             alt={"TEAM BUILDING"}
             image={"assets/images/services/w/stream.png"}
-            url={"#"}
+            url={"/contact"}
           />
           <ServiceBox
             title={"TALENTS ON DEMAND"}
             alt={"TALENTS ON DEMAND"}
             image={"assets/images/services/w/ads-click.png"}
-            url={"#"}
+            url={"/contact"}
           />
           <ServiceBox
             title={"PRODUCT MANAGEMENT"}
             alt={"PRODUCT MANAGEMENT"}
             image={"assets/images/services/w/volunteer-activism.png"}
-            url={"#"}
+            url={"/contact"}
           />
           <ServiceBox
             title={"DISCOVERY WORKSHOP"}
             alt={"DISCOVERY WORKSHOP"}
             image={"assets/images/services/w/travel-explore.png"}
-            url={"#"}
+            url={"/contact"}
           />
           <ServiceBox
             title={"LATEST TECHNOLOGY TRAINING"}
             alt={" LATEST TECHNOLOGY TRAINING"}
             image={"assets/images/services/w/magic-button.png"}
-            url={"#"}
+            url={"/contact"}
           />
           <ServiceBox
             title={"UIUX DESIGN"}
             alt={"UIUX DESIGN"}
             image={"assets/images/services/w/dashboard.png"}
-            url={"#"}
+            url={"/contact"}
           />
-          <ServiceViewAllBtn url={"#"} />
+          <ServiceViewAllBtn url={"/contact"} />
         </div>
       </div>
     </div>

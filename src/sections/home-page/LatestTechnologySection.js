@@ -26,15 +26,15 @@ const LatestTechnologySection = (props) => {
               <label>Technologies and Tools to be covered</label>
             </div>
             <div className="techs">
-              <TechItem url={"#"} icon={"android"} />
-              <TechItem url={"#"} icon={"ios"} />
-              <TechItem url={"#"} icon={"androidstudio"} />
-              <TechItem url={"#"} icon={"xcode"} />
-              <TechItem url={"#"} icon={"github"} />
-              <TechItem url={"#"} icon={"figma"} />
-              <TechItem url={"#"} icon={"jiira"} />
-              <TechItem url={"#"} icon={"confluence"} />
-              <TechItem url={"#"} icon={"react"} />
+              <TechItem url={"/contact"} icon={"android"} />
+              <TechItem url={"/contact"} icon={"ios"} />
+              <TechItem url={"/contact"} icon={"androidstudio"} />
+              <TechItem url={"/contact"} icon={"xcode"} />
+              <TechItem url={"/contact"} icon={"github"} />
+              <TechItem url={"/contact"} icon={"figma"} />
+              <TechItem url={"/contact"} icon={"jiira"} />
+              <TechItem url={"/contact"} icon={"confluence"} />
+              <TechItem url={"/contact"} icon={"react"} />
             </div>
             <div className="action">
               <a href={viewAllUrl} className="btn">

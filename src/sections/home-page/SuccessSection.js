@@ -39,7 +39,7 @@ const SuccessSection = (props) => {
                 measurable results again and again
               </div>
               <div className="action">
-                <a href="#" className="btn btn-primary">
+                <a href="/contact" className="btn btn-primary">
                   <span>KNOW MORE ABOUT US</span>
                   <img src="assets/images/arrow-forward-ios.png" />
                 </a>

@@ -24,12 +24,12 @@ const TechnologyStackSection = (props) => {
               scrollbarWidth: 0,
             }}
           >
-            <TechStack url={"#"} image={"android"} />
-            <TechStack url={"#"} image={"ios"} />
-            <TechStack url={"#"} image={"aws"} />
-            <TechStack url={"#"} image={"gworkspace"} />
-            <TechStack url={"#"} image={"react"} />
-            <TechStack url={"#"} image={"figma"} />
+            <TechStack url={"/contact"} image={"android"} />
+            <TechStack url={"/contact"} image={"ios"} />
+            <TechStack url={"/contact"} image={"aws"} />
+            <TechStack url={"/contact"} image={"gworkspace"} />
+            <TechStack url={"/contact"} image={"react"} />
+            <TechStack url={"/contact"} image={"figma"} />
           </div>
         </div>
       </div>

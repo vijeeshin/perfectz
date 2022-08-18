@@ -46,7 +46,7 @@ const ContactUsPage = () => {
         linkedInUrl={Config.linkedInUrl}
       />
 
-      <FooterLayout name={"perfectz"} />
+      <FooterLayout name={"PERFECTZ DIGITAL"} />
     </>
   );
 };

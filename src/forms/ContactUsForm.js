@@ -9,7 +9,7 @@ import {
   loadCaptcha,
   validateCaptcha,
 } from "./ReactCaptcha";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 const ContactUsForm = (props) => {
   useEffect(() => {

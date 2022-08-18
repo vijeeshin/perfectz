@@ -23,7 +23,6 @@ const HomePage = (props) => {
   return (
     <>
       <HeaderLayout />
-
       <div className="hero header-size-pad">
         <div className={width > 768 ? "container" : "container px-5"}>
           <TwoSwiper />
@@ -40,18 +39,14 @@ const HomePage = (props) => {
         actionButtonUrl={"/contact"}
       />
       <LatestTechnologySection />
-
       <TechnologyStackSection />
-
       <TalentSection url={"/contact"} />
       <BrandingSection url={"/contact"} />
       <ClientSection
         clients={Config.data.client.clients}
         desc={Config.data.client.description}
       />
-
       <ContactUsSection />
-
       <AddressSection
         addresses={Config.data.addresses}
         emailUrl={Config.emailAddress}

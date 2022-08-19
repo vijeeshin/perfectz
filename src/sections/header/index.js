@@ -17,7 +17,7 @@ const HeaderSection = (props) => {
       />
       <div className="col uamenu">
         <div className="row align-items-center justify-content-end">
-          <HeaderEmailSection emailAddress={props.emailAddress} />
+          {/*   <HeaderEmailSection emailAddress={props.emailAddress} /> */}
           {/* <HeaderMenuSection /> */}
         </div>
       </div>

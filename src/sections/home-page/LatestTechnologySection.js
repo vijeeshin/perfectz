@@ -23,7 +23,7 @@ const LatestTechnologySection = (props) => {
               Join our fast growing global team to unleash your full potential.
             </div>
             <div className="text-3">
-              <label>Technologies and Tools to be covered</label>
+              <label>Technologies</label>
             </div>
             <div className="techs">
               <TechItem url={"/contact"} icon={"android"} />

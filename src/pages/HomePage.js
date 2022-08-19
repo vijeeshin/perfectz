@@ -38,7 +38,7 @@ const HomePage = (props) => {
         actionButtonText={"CONTACT US NOW"}
         actionButtonUrl={"/contact"}
       />
-      <LatestTechnologySection />
+      <LatestTechnologySection viewAllUrl={"/contact"} />
       <TechnologyStackSection />
       <TalentSection url={"/contact"} />
       <BrandingSection url={"/contact"} />

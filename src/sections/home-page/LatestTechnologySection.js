@@ -30,11 +30,9 @@ const LatestTechnologySection = (props) => {
               <TechItem url={"/contact"} icon={"ios"} />
               <TechItem url={"/contact"} icon={"androidstudio"} />
               <TechItem url={"/contact"} icon={"xcode"} />
-              <TechItem url={"/contact"} icon={"github"} />
-              <TechItem url={"/contact"} icon={"figma"} />
-              <TechItem url={"/contact"} icon={"jiira"} />
-              <TechItem url={"/contact"} icon={"confluence"} />
               <TechItem url={"/contact"} icon={"react"} />
+              <TechItem url={"/contact"} icon={"angular"} />
+              <TechItem url={"/contact"} icon={"golang"} />
             </div>
             <div className="action">
               <a href={viewAllUrl} className="btn">

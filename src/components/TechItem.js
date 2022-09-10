@@ -5,7 +5,11 @@ const TechItem = (props) => {
   const { url, icon } = props;
   return (
     <a className="techs-item" href={url}>
-      <img src={`assets/images/techs/${icon}.png`} />
+      <img
+        src={`${window.location.origin}/assets/images/techs/${icon}.png`}
+        alt={icon}
+        title={icon}
+      />
     </a>
   );
 };

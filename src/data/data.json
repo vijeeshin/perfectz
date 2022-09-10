@@ -1,4 +1,140 @@
 {
+  "homepage": {
+    "slider": [
+      {
+        "title": "DESIGN AND BUILD YOUR TECH TEAM",
+        "description": "We create value for our clients by creating value for their customers.",
+        "buttonTitle": "OUR SERVICES",
+        "url": "/contact",
+        "image": "hero-object"
+      },
+      {
+        "title": "WE HELP TRANSFORM",
+        "description": "Technology stack transformation",
+        "buttonTitle": "OUR SERVICES",
+        "url": "/contact",
+        "image": "hero-object2"
+      },
+      {
+        "title": "IT TALENTS ON-DEMAND",
+        "description": " We know that you can't build a company with innovation alone, you also need IT talent to deliver products.",
+        "buttonTitle": "OUR SERVICES",
+        "url": "/contact",
+        "image": "hero-object3"
+      }
+    ],
+    "successSection": {
+      "title": "COMPLETE CLIENT SUCCESS",
+      "description": "Count on PERFECTZ DIGITAL to deliver essential solutions and measurable results again and again",
+      "buttonTitle": "KNOW MORE ABOUT US",
+      "url": "/contact"
+    },
+    "services": [
+      {
+        "slug": "tech-transformation",
+        "title": "TECH TRANSFORMATION",
+        "url": "/services/tech-transformation",
+        "image": "attractions"
+      },
+      {
+        "slug": "team-building",
+        "title": "TEAM BUILDING",
+        "url": "/contact",
+        "image": "stream"
+      },
+      {
+        "slug": "talents-on-demand",
+        "title": "TALENTS ON DEMAND",
+        "url": "/contact",
+        "image": "ads-click"
+      },
+      {
+        "slug": "product-management",
+        "title": "PRODUCT MANAGEMENT",
+        "url": "/contact",
+        "image": "volunteer-activism"
+      },
+      {
+        "slug": "discovery-workshop",
+        "title": "DISCOVERY WORKSHOP",
+        "url": "/contact",
+        "image": "travel-explore"
+      },
+      {
+        "slug": "latest-technology-training",
+        "title": "LATEST TECHNOLOGY TRAINING",
+        "url": "/contact",
+        "image": "magic-button"
+      },
+      {
+        "slug": "uiux-design",
+        "title": "UIUX DESIGN",
+        "url": "/contact",
+        "image": "dashboard"
+      }
+    ],
+    "helloSection": {
+      "title": "HELLO!",
+      "subtitle": "Why settle for a vendor when you need is a partner?",
+      "buttonTitle": "CONTACT US NOW",
+      "url": "/contact"
+    },
+    "latestTechnologies": {
+      "title": "Latest Technologies",
+      "desc": "Join our fast growing global team to unleash your full potential.",
+      "boxTitle": "Technologies",
+      "buttonTitle": "VIEW ALL COURSES",
+      "url": "/contact",
+      "stacks": [
+        { "image": "android", "title": "android", "url": "/contact" },
+        { "image": "ios", "title": "ios", "url": "/contact" },
+        {
+          "image": "androidstudio",
+          "title": "androidstudio",
+          "url": "/contact"
+        },
+        { "image": "xcode", "title": "xcode", "url": "/contact" },
+        { "image": "react", "title": "react", "url": "/contact" },
+        { "image": "angular", "title": "angular", "url": "/contact" },
+        { "image": "golang", "title": "golang", "url": "/contact" }
+      ]
+    },
+    "technologiesStack": {
+      "title": "Technology Stack",
+      "desc": "All our engineers are expertise in latest Mobile, Web and Backend technology stack",
+      "stacks": [
+        { "image": "android", "title": "android", "url": "/contact" },
+        { "image": "ios", "title": "ios", "url": "/contact" },
+        {
+          "image": "aws",
+          "title": "aws",
+          "url": "/contact"
+        },
+        { "image": "gworkspace", "title": "gworkspace", "url": "/contact" },
+        { "image": "react", "title": "react", "url": "/contact" },
+        { "image": "figma", "title": "figma", "url": "/contact" }
+      ]
+    },
+    "talentSection": {
+      "desc": "We are here to provide Talents-on-Demand to create High Performance Teams (HPTs)",
+      "buttonTitle": "CONTACT US NOW",
+      "url": "/contact"
+    },
+    "brandingSection": {
+      "title": "Refresh Your Brands’ with our World class designers",
+      "desc": "We believe “Mobile first design” principle is the core of any product design.",
+      "buttonTitle": "KNOW MORE",
+      "url": "/contact"
+    },
+    "client": {
+      "description": "",
+      "clients": [
+        { "url": "", "image": "cakap" },
+        { "url": "", "image": "juneit" },
+        { "url": "", "image": "ailoitte" }
+      ]
+    }
+  },
   "addresses": [
     {
       "title": "UAE",
@@ -11,12 +147,143 @@
       "location": "https://www.google.com/maps/place/DS+max+Sterling/@12.9415792,77.750609,15z/data=!4m5!3m4!1s0x0:0xc4c36b864d7f7aa!8m2!3d12.9415792!4d77.750609"
     }
   ],
-  "client": {
-    "description": "",
-    "clients": [
-      { "url": "", "image": "cakap" },
-      { "url": "", "image": "juneit" },
-      { "url": "", "image": "ailoitte" }
+  "contactPage": {
+    "title": "WE ARE HERE TO HELP",
+    "subtitle": "Let’s send a message"
+  },
+  "servicePage": {
+    "services": [
+      {
+        "slug": "tech-transformation",
+        "title": "TECH TRANSFORMATION",
+        "subTitle": "We help companies for",
+        "highlights": [
+          "Quam scelerisque purus",
+          "Quam scelerisque purus",
+          "Quam scelerisque purus"
+        ],
+        "body": {
+          "title": "Lorem ipsum dolo rsit amet, consect etur adipiscing",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam scelerisque purus tincidunt lorem elementum. Aliquam magna egestas purus massa leo. Malesuada scelerisque phasellus eget viverra semper lacus. Venenatis massa mauris.",
+          "paragraph": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam scelerisque purus tincidunt lorem elementum. Aliquam magna egestas purus massa leo. Malesuada scelerisque phasellus eget viverra semper lacus. Venenatis massa mauris sit augue magna ac, ut nisl consectetur.",
+            "Orci neque, egestas consectetur cras quis orci morbi. Euismod arcu convallis convallis sed orci venenatis pharetra facilisi netus. Nunc quisque a senectus lacus id. Ornare cras consectetur. pharetra facilisi netus."
+          ],
+          "url": "/contact"
+        }
+      }
+    ],
+    "talentSection": {
+      "desc": "We are here to provide Talents-on-Demand to create High Performance Teams (HPTs)",
+      "buttonTitle": "CONTACT US NOW",
+      "url": "/contact"
+    }
+  },
+  "coursesPage": {
+    "title": "SUPERCHARGE YOUR CAREER WITH OUR TECHNOLOGY TRAINING PROGRAM",
+    "stacks": [
+      {
+        "title": "All Courses",
+        "id": "all-courses",
+        "key": 1
+      },
+      {
+        "title": "FrontEnd",
+        "id": "front-end",
+        "key": 2
+      },
+      {
+        "title": "Backend",
+        "id": "back-end",
+        "key": 3
+      },
+      {
+        "title": "Artificial Intelligence",
+        "id": "artificial-intelligence",
+        "key": 4
+      },
+      {
+        "title": "UX/UI",
+        "id": "ux-ui",
+        "key": 5
+      }
+    ],
+    "technologies": [
+      {
+        "image": "mobiledev",
+        "title": "Mobile Application Development",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit aliquet risus mi elit pretium sit ut pharetra, commodo. Volutpat dignissim vel cursus aliquet a. Urna, imperdiet est quam elit urna enim. Sit enim, adipiscing a quisque. Magna pellentesque sem aliquet donec ipsum viverra amet posuere.",
+        "duration": "2 Months",
+        "level": "Beginner",
+        "location": "Remote",
+        "software": [
+          "android",
+          "ios",
+          "androidstudio",
+          "xcode",
+          "git",
+          "figma",
+          "jiira",
+          "confluence",
+          "react"
+        ],
+        "keywords": [
+          "Experienced Trainers",
+          "Premium Study Materials",
+          "Project Based Training",
+          "Agile Process Training",
+          "Personal Development Program"
+        ],
+        "key": [0, 1]
+      }
+    ]
+  },
+  "allServicesPage": {
+    "title": "OUR SERVICES",
+    "subtitle": "We help companies with",
+    "services": [
+      {
+        "slug": "tech-transformation",
+        "title": "TECH TRANSFORMATION",
+        "url": "/services/tech-transformation",
+        "image": "attractions"
+      },
+      {
+        "slug": "team-building",
+        "title": "TEAM BUILDING",
+        "url": "/contact",
+        "image": "stream"
+      },
+      {
+        "slug": "talents-on-demand",
+        "title": "TALENTS ON DEMAND",
+        "url": "/contact",
+        "image": "ads-click"
+      },
+      {
+        "slug": "product-management",
+        "title": "PRODUCT MANAGEMENT",
+        "url": "/contact",
+        "image": "volunteer-activism"
+      },
+      {
+        "slug": "discovery-workshop",
+        "title": "DISCOVERY WORKSHOP",
+        "url": "/contact",
+        "image": "travel-explore"
+      },
+      {
+        "slug": "latest-technology-training",
+        "title": "LATEST TECHNOLOGY TRAINING",
+        "url": "/contact",
+        "image": "magic-button"
+      },
+      {
+        "slug": "uiux-design",
+        "title": "UIUX DESIGN",
+        "url": "/contact",
+        "image": "dashboard"
+      }
     ]
   }
 }

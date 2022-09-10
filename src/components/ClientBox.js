@@ -7,7 +7,10 @@ const ClientBox = (props) => {
     <div className="col col-6 col-sm-3">
       <a href={url}>
         <div className="client">
-          <img src={`assets/images/clients/${image}.png`} alt={"client"} />
+          <img
+            src={`${window.location.origin}/assets/images/clients/${image}.png`}
+            alt={"client"}
+          />
         </div>
       </a>
     </div>

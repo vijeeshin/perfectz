@@ -8,7 +8,10 @@ const TechStack = (props) => {
       <div className="slider-slide">
         <div className="slider-slide-content">
           <div className="image">
-            <img src={`assets/images/techstack/${image}.png`} />
+            <img
+              src={`${window.location.origin}/assets/images/techstack/${image}.png`}
+              alt={image}
+            />
           </div>
         </div>
       </div>

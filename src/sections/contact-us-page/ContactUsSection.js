@@ -19,7 +19,7 @@ const ContactUsSection = () => {
           </div>
           <div className="col-sm-6 d-none d-sm-block">
             <div className="contact-image">
-              <img src="assets/images/mail.png" />
+              <img src={`${window.location.origin}/assets/images/mail.png`} />
             </div>
           </div>
         </div>

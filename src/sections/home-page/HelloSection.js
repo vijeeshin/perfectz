@@ -20,7 +20,10 @@ const HelloSection = (props) => {
           <div className="hello-text">
             <div className="text-1">{title}</div>
             <div className="hello-image-1 d-block d-sm-none">
-              <img src={`assets/images/${image}.png`} alt={title} />
+              <img
+                src={`${window.location.origin}/assets/images/${image}.png`}
+                alt={title}
+              />
             </div>
             <div
               className="text-2"
@@ -32,7 +35,7 @@ const HelloSection = (props) => {
               <a href={actionButtonUrl} className="btn">
                 <span>{actionButtonText}</span>
                 <img
-                  src={`assets/images/${actionButtonIcon}.png`}
+                  src={`${window.location.origin}/assets/images/${actionButtonIcon}.png`}
                   alt={actionButtonText}
                 />
               </a>

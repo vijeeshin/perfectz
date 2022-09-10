@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import useWindowDimensions from "../../utils/useWindowDimensions";
 
-const SuccessSection = (props) => {
+const SuccessSection = ({ data }) => {
   const { width } = useWindowDimensions();
+  const chunks = data?.title?.split(" ");
 
   return (
     <div className="section-1">
@@ -14,11 +15,20 @@ const SuccessSection = (props) => {
               <div className="client-success"></div>
             </div>
             <div className="col">
-              <div className="text-1">
-                COMPLETE
-                <br />
-                CLIENT SUCCESS
-              </div>
+              {chunks.length > 0 && (
+                <div className="text-1">
+                  {chunks.map((chunk, index) =>
+                    index === 0 ? (
+                      <span key={`success-lg-${index}`}>
+                        <span>{chunk}</span>
+                        <br />
+                      </span>
+                    ) : (
+                      <span key={`success-lg-${index}`}>{chunk}</span>
+                    )
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -30,18 +40,28 @@ const SuccessSection = (props) => {
           <div className="col">
             <div className="client-success-text">
               <div className="text-1 d-none d-sm-block">
-                COMPLETE
-                <br />
-                CLIENT SUCCESS
+                {chunks.length > 0 && (
+                  <div className="text-1">
+                    {chunks.map((chunk, index) =>
+                      index === 0 ? (
+                        <span key={`success-${index}`}>
+                          <span>{chunk}</span>
+                          <br />
+                        </span>
+                      ) : (
+                        <span key={`success-${index}`}>{chunk}</span>
+                      )
+                    )}
+                  </div>
+                )}
               </div>
-              <div className="text-2">
-                Count on PERFECTZ DIGITAL to deliver essential solutions and
-                measurable results again and again
-              </div>
+              <div className="text-2">{data.description}</div>
               <div className="action">
-                <a href="/contact" className="btn btn-primary">
-                  <span>KNOW MORE ABOUT US</span>
-                  <img src="assets/images/arrow-forward-ios.png" />
+                <a href={data.url} className="btn btn-primary">
+                  <span>{data.buttonTitle}</span>
+                  <img
+                    src={`${window.location.origin}/assets/images/arrow-forward-ios.png`}
+                  />
                 </a>
               </div>
             </div>

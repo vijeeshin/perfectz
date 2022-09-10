@@ -7,7 +7,7 @@ export const HeaderLayout = () => {
     <div className="header">
       <div className="container">
         <HeaderSection
-          logoImage={"assets/images/logo.png"}
+          logoImage={window.location.origin + "/assets/images/logo.png"}
           logoAlt="Perfectz Logo"
           logoUrl={Config.url}
           emailAddress={Config.emailAddress}

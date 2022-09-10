@@ -17,13 +17,19 @@ const AllServicePage = () => {
                   <div className="row">
                     <div className="col col-12 col-sm-6">
                       <div>
-                        <div className="text-3">We help companies with</div>
-                        <div className="text-1">OUR SERVICES</div>
+                        <div className="text-3">
+                          {Config.data.allServicesPage.subtitle}
+                        </div>
+                        <div className="text-1">
+                          {Config.data.allServicesPage.title}
+                        </div>
                       </div>
                     </div>
                     <div className="col col-12 col-sm-6">
                       <div className="image-2">
-                        <img src="assets/images/all-services.png" />
+                        <img
+                          src={`${window.location.origin}/assets/images/all-services.png`}
+                        />
                       </div>
                     </div>
                   </div>
@@ -38,73 +44,44 @@ const AllServicePage = () => {
         <div className="container">
           <div className="text-1">Our Services</div>
           <div className="row">
-            <div className="col col-12 col-sm-6">
-              <div className="service">
-                <div className="service-content">
-                  <div className="service-image">
-                    <img src="assets/images/services/y/attractions.png" />
-                  </div>
-                  <div className="service-name">Tech Transformation</div>
-                  <div className="service-desc">
-                    Lorem ipsum dolor sit amet, consectetur redoven adipiscing
-                    elit. Quam scelerisque purus tincidunt lorem elementum.
-                    Aliquam magna egestas.
-                  </div>
-                  <div className="service-action">
-                    <a href="#" className="btn btn-primary">
-                      <span>DISCOVER MORE</span>
-                      <img src="assets/images/arrow-forward-ios.png" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col col-12 col-sm-6">
-              <div className="service">
-                <div className="service-content">
-                  <div className="service-image">
-                    <img src="assets/images/services/y/attractions.png" />
-                  </div>
-                  <div className="service-name">Tech Transformation</div>
-                  <div className="service-desc">
-                    Lorem ipsum dolor sit amet, consectetur redoven adipiscing
-                    elit. Quam scelerisque purus tincidunt lorem elementum.
-                  </div>
-                  <div className="service-action">
-                    <a href="#" className="btn btn-primary">
-                      <span>DISCOVER MORE</span>
-                      <img src="assets/images/arrow-forward-ios.png" />
-                    </a>
+            {Config.data.allServicesPage.services.map((service, index) => {
+              return (
+                <div
+                  className="col col-12 col-sm-6"
+                  key={`services-key-${index}`}
+                >
+                  <div className="service">
+                    <div className="service-content">
+                      <div className="service-image">
+                        <img
+                          src={`${window.location.origin}/assets/images/services/y/${service.image}.png`}
+                        />
+                      </div>
+                      <div className="service-name">{service.title}</div>
+                      <div className="service-desc">
+                        Lorem ipsum dolor sit amet, consectetur redoven
+                        adipiscing elit. Quam scelerisque purus tincidunt lorem
+                        elementum. Aliquam magna egestas.
+                      </div>
+                      <div className="service-action">
+                        <a
+                          href={`/services/${service.slug}`}
+                          className="btn btn-primary"
+                        >
+                          <span>DISCOVER MORE</span>
+                          <img
+                            src={`${window.location.origin}/assets/images/arrow-forward-ios.png`}
+                          />
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              );
+            })}
 
             <div className="col col-12 col-sm-6">
-              <div className="service">
-                <div className="service-content">
-                  <div className="service-image">
-                    <img src="assets/images/services/y/attractions.png" />
-                  </div>
-                  <div className="service-name">Tech Transformation</div>
-                  <div className="service-desc">
-                    Lorem ipsum dolor sit amet, consectetur redoven adipiscing
-                    elit. Quam scelerisque purus tincidunt lorem elementum.
-                    Aliquam magna egestas.
-                  </div>
-                  <div className="service-action">
-                    <a href="#" className="btn btn-primary">
-                      <span>DISCOVER MORE</span>
-                      <img src="assets/images/arrow-forward-ios.png" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col col-12 col-sm-6">
-              <a className="service know-more">
+              <a className="service know-more" href="/contact">
                 <div className="service-content">
                   <div className="service-name">KNOW MORE ABOUT US</div>
                 </div>

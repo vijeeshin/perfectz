@@ -19,17 +19,33 @@ const ContactUsPage = () => {
                   <div className="row">
                     <div className="col col-12 col-sm-5">
                       <div>
-                        <div className="text-3">Let’s send a message</div>
+                        <div className="text-3">
+                          {Config.data.contactPage.subtitle}
+                        </div>
                         <div className="text-1">
-                          WE ARE HERE
-                          <br />
-                          TO HELP
+                          {Config.data.contactPage.title
+                            .split(" ")
+                            .map((text, index) =>
+                              index === 0 ? (
+                                <span key={index}>
+                                  <span>{text}</span>
+                                  <br />
+                                </span>
+                              ) : (
+                                <span key={index}>
+                                  <span>{text}</span>
+                                  &nbsp;
+                                </span>
+                              )
+                            )}
                         </div>
                       </div>
                     </div>
                     <div className="col col-12 col-sm-7">
                       <div className="image-2">
-                        <img src="assets/images/contact-us.png" />
+                        <img
+                          src={`${window.location.origin}/assets/images/contact-us.png`}
+                        />
                       </div>
                     </div>
                   </div>

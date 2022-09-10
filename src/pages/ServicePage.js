@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { HeaderLayout } from "../layouts/header";
 import FooterLayout from "../layouts/footer/FooterLayout";
 import { Config } from "../config/Config";
 import ContactUsSection from "../sections/home-page/ContactUsSection";
+import TalentSection from "../sections/home-page/TalentSection";
+import { useParams } from "react-router-dom";
 
 const ServicePage = () => {
+  const { service } = useParams();
+
+  const [content, setContent] = useState();
+
+  useEffect(() => {
+    if (service && Config.data.servicePage) {
+      const d = Config.data.servicePage.services.find(
+        (s) => s.slug === service
+      );
+      setContent(d);
+    }
+  }, [service, Config.data.servicePage]);
+
   return (
     <>
       <HeaderLayout />
@@ -18,21 +33,32 @@ const ServicePage = () => {
                   <div className="row">
                     <div className="col col-12 col-sm-8">
                       <div>
-                        <div className="text-3">We help companies for</div>
+                        <div className="text-3">{content?.subTitle}</div>
                         <div className="text-1 text-1-1">
-                          TECH
-                          <br />
-                          TRANSFORMATION
+                          {content?.title.split(" ").map((service, index) =>
+                            index === 0 ? (
+                              <span key={`service-page-${index}`}>
+                                <span>{service}</span>
+                                <br />
+                              </span>
+                            ) : (
+                              <span key={`service-page-${index}`}>
+                                <span>{service}</span>
+                                &nbsp;
+                              </span>
+                            )
+                          )}
                         </div>
                       </div>
                     </div>
                     <div className="col col-12 col-sm-4">
                       <div className="higlights">
                         <ul>
-                          <li>Quam scelerisque purus</li>
-                          <li>Quam scelerisque purus</li>
-                          <li>Quam scelerisque purus</li>
-                          <li>Quam scelerisque purus</li>
+                          {content?.highlights.map((highlight, index) => (
+                            <li key={`service-highligh-${index}`}>
+                              {highlight}
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -51,9 +77,7 @@ const ServicePage = () => {
                 <div className="client-success"></div>
               </div>
               <div className="col">
-                <div className="text-1">
-                  Lorem ipsum dolo rsit amet, consect etur adipiscing
-                </div>
+                <div className="text-1">{content?.body.title}</div>
               </div>
             </div>
           </div>
@@ -62,38 +86,27 @@ const ServicePage = () => {
             <div className="col col-12 col-sm-6 ">
               <div className="client-success d-none d-sm-block"></div>
               <div className="text-3 pt-5">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
-                  scelerisque purus tincidunt lorem elementum. Aliquam magna
-                  egestas purus massa leo. Malesuada scelerisque phasellus eget
-                  viverra semper lacus. Venenatis massa mauris.
-                </p>
+                <p>{content?.body.subtitle}</p>
               </div>
             </div>
             <div className="col col-12 col-sm-6">
               <div className="client-success-text">
                 <div className="text-1 d-none d-sm-block">
-                  Lorem ipsum dolo rsit amet, consect etur adipiscing
+                  {content?.body.title}
                 </div>
                 <div className="text-2">
-                  <p className="pt-5">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Quam scelerisque purus tincidunt lorem elementum. Aliquam
-                    magna egestas purus massa leo. Malesuada scelerisque
-                    phasellus eget viverra semper lacus. Venenatis massa mauris
-                    sit augue magna ac, ut nisl consectetur.
-                  </p>
-                  <p>
-                    Orci neque, egestas consectetur cras quis orci morbi.
-                    Euismod arcu convallis convallis sed orci venenatis pharetra
-                    facilisi netus. Nunc quisque a senectus lacus id. Ornare
-                    cras consectetur. pharetra facilisi netus.
-                  </p>
+                  {content?.body.paragraph.map((para, index) => (
+                    <p key={index} className={index === 0 ? "pt-5" : ""}>
+                      {para}
+                    </p>
+                  ))}
                 </div>
                 <div className="action">
-                  <a href="/contact" className="btn btn-primary">
+                  <a href={content?.body.url} className="btn btn-primary">
                     <span>CONTACT US</span>
-                    <img src="assets/images/arrow-forward-ios.png" />
+                    <img
+                      src={`${window.location.origin}/assets/images/arrow-forward-ios.png`}
+                    />
                   </a>
                 </div>
               </div>
@@ -102,29 +115,7 @@ const ServicePage = () => {
         </div>
       </div>
 
-      <div className="section-6">
-        <div className="container px-5">
-          <div className="row">
-            <div className="col col-12 col-sm-6">
-              <div className="text-1">
-                We are here to provide Talents-on-Demand to create High
-                Performance Teams (HPTs)
-              </div>
-              <div className="action">
-                <a href="/contact" className="btn">
-                  <span>CONTACT US NOW</span>
-                  <img src="assets/images/arrow-forward.png" />
-                </a>
-              </div>
-            </div>
-            <div className="col col-12 col-sm-6">
-              <div className="talents-image">
-                <img src="assets/images/hpt.png" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <TalentSection data={Config.data.servicePage.talentSection} />
 
       <ContactUsSection />
       <FooterLayout name={Config.name} url={Config.url} />

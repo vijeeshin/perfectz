@@ -5,7 +5,10 @@ const HeaderEmailSection = (props) => {
   return (
     <div className="col-auto">
       <a href={`mailto:${props.emailAddress}`} target="_blank">
-        <img src="./assets/images/email.png" alt="perfectz email" />
+        <img
+          src={window.location.origin + "/assets/images/email.png"}
+          alt="perfectz email"
+        />
         <span className="d-none d-sm-block">{props.emailAddress}</span>
       </a>
     </div>

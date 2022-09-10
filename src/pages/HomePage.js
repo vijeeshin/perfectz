@@ -17,34 +17,36 @@ import ContactUsForm from "../forms/ContactUsForm";
 import ContactUsSection from "../sections/home-page/ContactUsSection";
 import BrandingSection from "../sections/home-page/BrandingSection";
 import useWindowDimensions from "../utils/useWindowDimensions";
+import _ from "lodash";
 
 const HomePage = (props) => {
   const { width } = useWindowDimensions();
+  const data = require("../data/data.json");
   return (
     <>
       <HeaderLayout />
       <div className="hero header-size-pad">
         <div className={width > 768 ? "container" : "container px-5"}>
-          <TwoSwiper />
+          <TwoSwiper data={data.homepage.slider} />
         </div>
       </div>
-      <SuccessSection />
-      <ServiceSection />
+      <SuccessSection data={data.homepage.successSection} />
+      <ServiceSection data={_.chunk(data.homepage.services, 7)[0]} />
       <HelloSection
-        title={"HELLO!"}
-        description={"Why settle for a vendor when you need is a partner?"}
+        title={data.homepage.helloSection.title}
+        description={data.homepage.helloSection.subtitle}
         image={"handshake"}
         actionButtonIcon={"arrow-forward"}
-        actionButtonText={"CONTACT US NOW"}
-        actionButtonUrl={"/contact"}
+        actionButtonText={data.homepage.helloSection.buttonTitle}
+        actionButtonUrl={data.homepage.helloSection.url}
       />
-      <LatestTechnologySection viewAllUrl={"/contact"} />
-      <TechnologyStackSection />
-      <TalentSection url={"/contact"} />
-      <BrandingSection url={"/contact"} />
+      <LatestTechnologySection data={data.homepage.latestTechnologies} />
+      <TechnologyStackSection data={data.homepage.technologiesStack} />
+      <TalentSection data={data.homepage.talentSection} />
+      <BrandingSection data={data.homepage.brandingSection} />
       <ClientSection
-        clients={Config.data.client.clients}
-        desc={Config.data.client.description}
+        clients={data.homepage.client.clients}
+        desc={data.homepage.client.description}
       />
       <ContactUsSection />
       <AddressSection

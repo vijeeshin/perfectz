@@ -5,14 +5,13 @@ import useWindowDimensions from "../../utils/useWindowDimensions";
 
 const TechnologyStackSection = (props) => {
   const { width } = useWindowDimensions();
+  const { data } = props;
+
   return (
     <div className="section-5">
       <div className={width > 768 ? "container" : "container px-5"}>
-        <div className="text-1">Technology Stack</div>
-        <div className="text-2">
-          All our engineers are expertise in latest Mobile, Web and Backend
-          technology stack
-        </div>
+        <div className="text-1">{data.title}</div>
+        <div className="text-2">{data.desc}</div>
 
         <div className="slider">
           <div
@@ -24,12 +23,9 @@ const TechnologyStackSection = (props) => {
               scrollbarWidth: 0,
             }}
           >
-            <TechStack url={"/contact"} image={"android"} />
-            <TechStack url={"/contact"} image={"ios"} />
-            <TechStack url={"/contact"} image={"aws"} />
-            <TechStack url={"/contact"} image={"gworkspace"} />
-            <TechStack url={"/contact"} image={"react"} />
-            <TechStack url={"/contact"} image={"figma"} />
+            {data.stacks.map((stack, index) => (
+              <TechStack key={index} url={stack.url} image={stack.image} />
+            ))}
           </div>
         </div>
       </div>

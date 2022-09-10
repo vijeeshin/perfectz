@@ -5,7 +5,7 @@ const HeaderMenuSection = (props) => {
   return (
     <div className="col-auto">
       <a href="http://localhost/perfectz/#">
-        <img src="./assets/images/grid-view.png" />
+        <img src={window.location.origin + "/assets/images/grid-view.png"} />
       </a>
     </div>
   );

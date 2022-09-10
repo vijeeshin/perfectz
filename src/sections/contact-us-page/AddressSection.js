@@ -9,7 +9,7 @@ const AddressSection = (props) => {
     <div className="section-10">
       <div className="container">
         <div className="logo">
-          <img src="assets/images/logo.png" />
+          <img src={`${window.location.origin}/assets/images/logo.png`} />
         </div>
         <div
           className={width > 768 ? "row justify-content-around" : "row px-5"}
@@ -47,7 +47,9 @@ const AddressSection = (props) => {
           >
             <label>Follow us:</label>
             <a href={linkedInUrl} target="_blank">
-              <img src="assets/images/linkedin.png" />
+              <img
+                src={`${window.location.origin}/assets/images/linkedin.png`}
+              />
             </a>
           </div>
         </div>

@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 const TwoSwiper = ({ data }) => {
   return (
-    <div className="slider">
+    <div className="slider" >
       <div className="slider-content">
         <div className="slider-slide">
           <div className="slider-slide-content">

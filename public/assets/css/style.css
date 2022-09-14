@@ -186,6 +186,7 @@
   font-size: 3.75rem;
   line-height: 1.1em;
   color: #fff;
+  text-align:left;
 }
 
 .hero .slider .text-2 {
@@ -193,6 +194,7 @@
   font-size: 1.75rem;
   line-height: 1.32em;
   color: #8F9092;
+  text-align:left;
 }
 
 .hero .slider .image-1 {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const ServiceBox = (props) => {
   return (
-    <div className="col col-6 col-sm-3">
+    <div className="col col-6 col-sm-6 col-xs-3">
       <a href={props.url} className="service">
         <div className="service-content">
           <div className="service-icon">

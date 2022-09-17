@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const ServiceViewAllBtn = (props) => {
   const { url } = props;
   return (
-    <div className="col col-6 col-sm-6">
+    <div className="col col-6 col-md-3 col-sm-6 col-xs-3">
       <a href={url} className="service view-all">
         <div className="service-content">
           <div className="service-label">

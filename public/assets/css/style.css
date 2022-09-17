@@ -3,19 +3,19 @@
     Author     : ajith
 */
 :root {
-  --bs-font-sans-serif: 'Montserrat', sans-serif;
+  --bs-font-sans-serif: "Montserrat", sans-serif;
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #8F9092;
+  --bs-body-color: #8f9092;
 }
 
 .btn {
-  --bs-btn-color: #E1A83F;
+  --bs-btn-color: #e1a83f;
   --bs-btn-bg: #fff;
-  --bs-btn-border-color: #E1A83F;
-  --bs-btn-hover-color: #E1A83F;
+  --bs-btn-border-color: #e1a83f;
+  --bs-btn-hover-color: #e1a83f;
   --bs-btn-hover-bg: #fff;
   --bs-btn-padding-x: 1rem;
   --bs-btn-padding-y: 0.5rem;
@@ -38,14 +38,14 @@
   vertical-align: middle;
 }
 
-.btn span+img {
+.btn span + img {
   margin-left: 0.3rem;
 }
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #E1A83F;
-  --bs-btn-border-color: #E1A83F;
+  --bs-btn-bg: #e1a83f;
+  --bs-btn-border-color: #e1a83f;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #d2972a;
   --bs-btn-hover-border-color: #d2972a;
@@ -55,8 +55,8 @@
   --bs-btn-active-border-color: #d2972a;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #E1A83F;
-  --bs-btn-disabled-border-color: #E1A83F;
+  --bs-btn-disabled-bg: #e1a83f;
+  --bs-btn-disabled-border-color: #e1a83f;
 }
 
 .form-control {
@@ -131,7 +131,7 @@
   display: inline-block;
 }
 
-.header .uamenu a img+span {
+.header .uamenu a img + span {
   margin-left: 0.5em;
 }
 
@@ -141,11 +141,11 @@
   height: auto;
   padding: 1.25rem 1.25rem 6.25rem 1.25rem;
   color: #fff;
-  background-color: #191A1C;
+  background-color: #191a1c;
 }
 
 .hero:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -159,7 +159,7 @@
   z-index: 0;
 }
 
-.hero>.container {
+.hero > .container {
   position: relative;
   z-index: 1;
 }
@@ -186,15 +186,15 @@
   font-size: 3.75rem;
   line-height: 1.1em;
   color: #fff;
-  text-align:left;
+  text-align: left;
 }
 
 .hero .slider .text-2 {
   margin-bottom: 3rem;
   font-size: 1.75rem;
   line-height: 1.32em;
-  color: #8F9092;
-  text-align:left;
+  color: #8f9092;
+  text-align: left;
 }
 
 .hero .slider .image-1 {
@@ -217,7 +217,7 @@
   margin-bottom: 1.5rem;
   line-height: 1.32em;
   font-size: 1.75rem;
-  color: #E1A83F;
+  color: #e1a83f;
 }
 
 .hero .slider-1 .image-2 {
@@ -252,7 +252,7 @@
 }
 
 .hero .slider-1 .higlights ul li:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 1.5em;
   height: 0.75em;
@@ -280,7 +280,7 @@
 }
 
 .section-1 .client-success:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12%;
   bottom: 12%;
@@ -301,16 +301,16 @@
   line-height: 1.2em;
   font-weight: 600;
   font-size: 3rem;
-  color: #25283A;
+  color: #25283a;
 }
 
 .section-1 .text-2 {
   margin-bottom: 4rem;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
   font-size: 1.375rem;
   line-height: 1.18em;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-2 {
@@ -368,14 +368,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #E1A83F;
+  background: #e1a83f;
 }
 
 .section-3 {
   padding: 5rem 0;
   overflow: hidden;
   color: #fff;
-  background-color: #E1A83F;
+  background-color: #e1a83f;
 }
 
 .section-3 .hello {
@@ -435,15 +435,15 @@
   line-height: 1.2em;
   font-size: 3rem;
   font-weight: 600;
-  color: #25283A;
+  color: #25283a;
 }
 
 .section-4 .text-2 {
   margin-bottom: 1rem;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 1.375rem;
   line-height: 1.18em;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-4 .text-3 {
@@ -454,7 +454,7 @@
   display: inline-block;
   padding: 0.5em 2em;
   color: #fff;
-  background: #E1A83F;
+  background: #e1a83f;
 }
 
 .section-4 .techs {
@@ -488,7 +488,7 @@
 
 .section-5 {
   padding: 5rem 0;
-  background-color: #191A1C;
+  background-color: #191a1c;
   background-image: url(../images/techstack-bg.png);
   background-size: cover;
   background-position: center center;
@@ -509,10 +509,10 @@
   margin: 0 auto 2rem auto;
   text-align: center;
   line-height: 1.2em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 2.75rem;
   font-weight: 600;
-  color: #E1A83F;
+  color: #e1a83f;
 }
 
 .section-5 .slider {
@@ -551,7 +551,7 @@
 
 .section-6 {
   padding: 5rem 0;
-  background: #E1A83F;
+  background: #e1a83f;
 }
 
 .section-6 .text-1 {
@@ -584,7 +584,7 @@
   line-height: 1.2em;
   font-weight: 600;
   font-size: 3rem;
-  color: #25283A;
+  color: #25283a;
 }
 
 .section-7 .text-2 {
@@ -592,9 +592,9 @@
   margin: 0 auto 2rem auto;
   text-align: center;
   line-height: 1.18em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 1.375rem;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-7 .designer-image {
@@ -635,15 +635,15 @@
   margin-bottom: 3rem;
   text-align: center;
   line-height: 1.18em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 1.375rem;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-8 .client {
   width: 100%;
   padding: 3rem 0;
-  background: #25283A;
+  background: #25283a;
 }
 
 .section-8 .client img {
@@ -654,7 +654,7 @@
 
 .section-9 {
   padding: 5rem 0;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .section-9 .text-1 {
@@ -663,16 +663,16 @@
   line-height: 1.2em;
   font-size: 3rem;
   font-weight: 600;
-  color: #25283A;
+  color: #25283a;
 }
 
 .section-9 .text-2 {
   margin-bottom: 3rem;
   text-align: center;
   line-height: 1.18em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 1.375rem;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-9 .contact-image {
@@ -717,14 +717,14 @@
 
 .section-10 .address-body {
   line-height: 1.4em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 1.125rem;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-10 .links {
   margin-top: 3rem;
-  color: #E1A83F;
+  color: #e1a83f;
 }
 
 .section-10 .links .link {
@@ -742,7 +742,7 @@
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  color: #E1A83F;
+  color: #e1a83f;
 }
 
 .section-10 .links .link a img {
@@ -768,7 +768,7 @@
 }
 
 .section-11 .client-success:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -789,16 +789,16 @@
   line-height: 1.2em;
   font-weight: 600;
   font-size: 3rem;
-  color: #25283A;
+  color: #25283a;
 }
 
 .section-11 .text-2 {
   margin-bottom: 4rem;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
   font-size: 1.375rem;
   line-height: 1.18em;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .section-11 .text-3 {
@@ -806,7 +806,7 @@
   line-height: 1.18em;
   font-size: 1.375rem;
   font-weight: 600;
-  color: #E1A83F;
+  color: #e1a83f;
 }
 
 .services {
@@ -820,7 +820,7 @@
   line-height: 1.2em;
   font-size: 3rem;
   font-weight: 600;
-  color: #191A1C;
+  color: #191a1c;
 }
 
 .services .service {
@@ -858,9 +858,9 @@
 .services .service-desc {
   margin-bottom: 2rem;
   line-height: 1.18em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 1.375rem;
-  color: #8F9092;
+  color: #8f9092;
 }
 
 .services .service-action {
@@ -879,7 +879,7 @@
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
-  background: #E1A83F;
+  background: #e1a83f;
 }
 
 .services .service.know-more .service-name {
@@ -898,7 +898,7 @@
   line-height: 1.2em;
   font-size: 3rem;
   font-weight: 600;
-  color: #191A1C;
+  color: #191a1c;
 }
 
 .courses .tabs ul {
@@ -918,26 +918,26 @@
   font-size: 1.375rem;
   text-decoration: none;
   line-height: 1.2em;
-  color: #191A1C;
-  border-bottom: 4px solid #E4E4E4;
+  color: #191a1c;
+  border-bottom: 4px solid #e4e4e4;
 }
 
 .courses .tabs ul li a.active {
   font-weight: 700;
-  border-color: #E1A83F;
+  border-color: #e1a83f;
 }
 
 .courses .course {
   padding: 2rem 0;
 }
 
-.courses .course+.course {
-  border-top: 1px solid #E1A83F;
+.courses .course + .course {
+  border-top: 1px solid #e1a83f;
 }
 
 .courses .course-image {
   padding: 20%;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .courses .course-image img {
@@ -955,8 +955,8 @@
 }
 
 .courses .course-desc {
-  font-family: 'Lato';
-  color: #8F9092;
+  font-family: "Lato";
+  color: #8f9092;
 }
 
 .courses .course-info {
@@ -971,9 +971,9 @@
   align-items: center;
   margin: 0 2rem 1rem 0;
   line-height: 2em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 0.75rem;
-  color: #E1A83F;
+  color: #e1a83f;
 }
 
 .courses .course-info .info-item img {
@@ -1010,17 +1010,17 @@
   padding: 0 1rem;
   margin: 0 0.5rem 0.5rem 0;
   line-height: 2em;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 0.75rem;
   color: #fff;
-  background: #E1A83F;
+  background: #e1a83f;
 }
 
 .page-footer {
   padding: 2.4rem 0;
   font-size: 0.875rem;
-  color: #191A1C;
-  background: #E1A83F;
+  color: #191a1c;
+  background: #e1a83f;
 }
 
 .page-footer .copyright {
@@ -1156,6 +1156,63 @@
   vertical-align: middle;
 }
 .page-footer .copyright li a {
-      color: #191A1C;
-      text-decoration: none;
+  color: #191a1c;
+  text-decoration: none;
+}
+
+.service:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.service:hover .service-icon img {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.service:hover .service-image img {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.service:hover .service-name {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }

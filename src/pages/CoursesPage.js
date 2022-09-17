@@ -4,6 +4,7 @@ import { HeaderLayout } from "../layouts/header";
 import FooterLayout from "../layouts/footer/FooterLayout";
 import { Config } from "../config/Config";
 import EnquerySection from "../sections/enquery-sections/EnquerySection";
+import { motion } from "framer-motion";
 /**
  * Course Page
  */
@@ -24,7 +25,14 @@ const CoursesPage = () => {
                       <div>
                         <div className="text-3"></div>
                         <div className="text-1">
-                          {Config?.data?.coursesPage?.title}
+                          <motion.div
+                            whileHover={{
+                              scale: [1, 1.5, 1.5, 1, 1],
+                              transition: { duration: 1 },
+                            }}
+                          >
+                            {Config?.data?.coursesPage?.title}
+                          </motion.div>
                         </div>
                       </div>
                     </div>

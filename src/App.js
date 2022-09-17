@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { ServicePage } from "./pages/ServicePage";
 import { CoursesPage } from "./pages/CoursesPage";
 import { AllServicePage } from "./pages/AllServicePage";
+import { AboutPage } from "./pages/AboutPage";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/services/:service" element={<ServicePage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/services" element={<AllServicePage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>

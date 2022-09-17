@@ -285,5 +285,33 @@
         "image": "dashboard"
       }
     ]
+  },
+  "aboutPage": {
+    "services": [
+      {
+        "slug": "tech-transformation",
+        "title": "TECH TRANSFORMATION",
+        "subTitle": "We help companies for",
+        "highlights": [
+          "Quam scelerisque purus",
+          "Quam scelerisque purus",
+          "Quam scelerisque purus"
+        ],
+        "body": {
+          "title": "Lorem ipsum dolo rsit amet, consect etur adipiscing",
+          "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam scelerisque purus tincidunt lorem elementum. Aliquam magna egestas purus massa leo. Malesuada scelerisque phasellus eget viverra semper lacus. Venenatis massa mauris.",
+          "paragraph": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam scelerisque purus tincidunt lorem elementum. Aliquam magna egestas purus massa leo. Malesuada scelerisque phasellus eget viverra semper lacus. Venenatis massa mauris sit augue magna ac, ut nisl consectetur.",
+            "Orci neque, egestas consectetur cras quis orci morbi. Euismod arcu convallis convallis sed orci venenatis pharetra facilisi netus. Nunc quisque a senectus lacus id. Ornare cras consectetur. pharetra facilisi netus."
+          ],
+          "url": "/contact"
+        }
+      }
+    ],
+    "talentSection": {
+      "desc": "We are here to provide Talents-on-Demand to create High Performance Teams (HPTs)",
+      "buttonTitle": "CONTACT US NOW",
+      "url": "/contact"
+    }
   }
 }

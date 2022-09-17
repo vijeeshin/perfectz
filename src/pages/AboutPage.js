@@ -6,20 +6,18 @@ import { Config } from "../config/Config";
 import ContactUsSection from "../sections/home-page/ContactUsSection";
 import TalentSection from "../sections/home-page/TalentSection";
 import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
-const ServicePage = () => {
+
+const AboutPage = () => {
   const { service } = useParams();
 
   const [content, setContent] = useState();
 
   useEffect(() => {
-    if (service && Config.data.servicePage) {
-      const d = Config.data.servicePage.services.find(
-        (s) => s.slug === service
-      );
+    if (service && Config.data.aboutPage) {
+      const d = Config.data.aboutPage.services.find((s) => s.slug === service);
       setContent(d);
     }
-  }, [service, Config.data.servicePage]);
+  }, [service, Config.data.aboutPage]);
 
   return (
     <>
@@ -35,26 +33,19 @@ const ServicePage = () => {
                       <div>
                         <div className="text-3">{content?.subTitle}</div>
                         <div className="text-1 text-1-1">
-                          <motion.div
-                            whileHover={{
-                              scale: [1, 1.5, 1.5, 1, 1],
-                              transition: { duration: 1 },
-                            }}
-                          >
-                            {content?.title.split(" ").map((service, index) =>
-                              index === 0 ? (
-                                <span key={`service-page-${index}`}>
-                                  <span>{service}</span>
-                                  <br />
-                                </span>
-                              ) : (
-                                <span key={`service-page-${index}`}>
-                                  <span>{service}</span>
-                                  &nbsp;
-                                </span>
-                              )
-                            )}
-                          </motion.div>
+                          {content?.title.split(" ").map((service, index) =>
+                            index === 0 ? (
+                              <span key={`service-page-${index}`}>
+                                <span>{service}</span>
+                                <br />
+                              </span>
+                            ) : (
+                              <span key={`service-page-${index}`}>
+                                <span>{service}</span>
+                                &nbsp;
+                              </span>
+                            )
+                          )}
                         </div>
                       </div>
                     </div>
@@ -122,7 +113,7 @@ const ServicePage = () => {
         </div>
       </div>
 
-      <TalentSection data={Config.data.servicePage.talentSection} />
+      <TalentSection data={Config.data.aboutPage.talentSection} />
 
       <ContactUsSection />
       <FooterLayout name={Config.name} url={Config.url} />
@@ -130,4 +121,4 @@ const ServicePage = () => {
   );
 };
 
-export { ServicePage };
+export { AboutPage };

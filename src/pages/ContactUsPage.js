@@ -5,7 +5,7 @@ import FooterLayout from "../layouts/footer/FooterLayout";
 import AddressSection from "../sections/contact-us-page/AddressSection";
 import { Config } from "../config/Config";
 import ContactUsSection from "../sections/contact-us-page/ContactUsSection";
-
+import { motion } from "framer-motion";
 const ContactUsPage = () => {
   return (
     <>
@@ -23,21 +23,28 @@ const ContactUsPage = () => {
                           {Config.data.contactPage.subtitle}
                         </div>
                         <div className="text-1">
-                          {Config.data.contactPage.title
-                            .split(" ")
-                            .map((text, index) =>
-                              index === 0 ? (
-                                <span key={index}>
-                                  <span>{text}</span>
-                                  <br />
-                                </span>
-                              ) : (
-                                <span key={index}>
-                                  <span>{text}</span>
-                                  &nbsp;
-                                </span>
-                              )
-                            )}
+                          <motion.div
+                            whileHover={{
+                              scale: [1, 1.5, 1.5, 1, 1],
+                              transition: { duration: 1 },
+                            }}
+                          >
+                            {Config.data.contactPage.title
+                              .split(" ")
+                              .map((text, index) =>
+                                index === 0 ? (
+                                  <span key={index}>
+                                    <span>{text}</span>
+                                    <br />
+                                  </span>
+                                ) : (
+                                  <span key={index}>
+                                    <span>{text}</span>
+                                    &nbsp;
+                                  </span>
+                                )
+                              )}
+                          </motion.div>
                         </div>
                       </div>
                     </div>

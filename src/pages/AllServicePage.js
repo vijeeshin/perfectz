@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { HeaderLayout } from "../layouts/header";
 import FooterLayout from "../layouts/footer/FooterLayout";
 import { Config } from "../config/Config";
-
+import { motion } from "framer-motion";
 const AllServicePage = () => {
   return (
     <>
@@ -21,7 +21,14 @@ const AllServicePage = () => {
                           {Config.data.allServicesPage.subtitle}
                         </div>
                         <div className="text-1">
-                          {Config.data.allServicesPage.title}
+                          <motion.div
+                            whileHover={{
+                              scale: [1, 1.5, 1.5, 1, 1],
+                              transition: { duration: 1 },
+                            }}
+                          >
+                            {Config.data.allServicesPage.title}
+                          </motion.div>
                         </div>
                       </div>
                     </div>

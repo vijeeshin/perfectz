@@ -1060,6 +1060,7 @@
 
   .hero .slider-1 .text-1-1 {
     font-size: 3rem;
+    word-wrap: break-word;
   }
 
   .hero .slider-1 .text-3 {

@@ -1048,6 +1048,7 @@
   .hero .slider .text-1 {
     margin-bottom: 2rem;
     text-align: center;
+    word-wrap: break-word;
   }
 
   .hero .slider .text-2 {
